@@ -9,6 +9,7 @@ public class MyMethodsHandler
 
     public MyMethodsHandler() { type = typeof(MyMethods); }
 
+    // Reflection
     public string GetMethodResult(string method, string param1, string param2)
     {
         object classInstance = Activator.CreateInstance(type, null);

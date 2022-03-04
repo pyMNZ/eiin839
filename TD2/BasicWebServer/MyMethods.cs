@@ -5,16 +5,19 @@ namespace BasicWebServer
 {
     internal class MyMethods
     {
+        // Interne
         public string Method1(string param1, string param2)
         {
             return $"<html><body> Hello {param1} et {param2} </body></html>";
         }
 
+        // Interne
         public string Method2(string param1, string param2)
         {
             return $"<html><body> Not hello {param1} et {param2} </body></html>";
         }
 
+        // Externe
         public string MethodExternal(string param1, string param2)
         {
             //
