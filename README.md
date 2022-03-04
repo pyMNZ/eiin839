@@ -1,9 +1,11 @@
 # EIIN839 - ECUE Service oriented computing/WS
+# Author - Pierre-Yves Munoz
 
-This repository contains helpers for the exercises and projects of the Service Oriented Computing / Web Services course of Polytech'Nice-Sophia.
+## Pour le TD2
 
-To use this repository as a base for your project, fork it (there is a button for that on the top-right corner of the Github page), and use the fork as your own project.
+Les questions 1 et 2 sont trouvables dans le projet **BasicWebServerUrlParser** (dossier BasicWebServer). Il suffit de lancer ce projet et d'aller sur les URLS (qui sont écrites dans MyMehods.cs) suivantes:
+ - Question 1: http://localhost:8080/Method1?param1=test&param2=test2 et http://localhost:8080/Method2?param1=test&param2=test2
+ - Question 2: http://localhost:8080/MethodExternal?param1=test&param2=test2
 
-You are also strongly advised to watch the repo (another button on the top-right corner) to be updated when modifications are pushed to it.
-
-Note : If you need help forking or syncing your fork with the main repository, you can follow [this procedure](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+Pour la question 3, définir plusieurs projets de démarages: Q3 et ClientQ3. ClientQ3 est **dépendant** de Q3.
+Éxécuter et l'URL est: http://localhost:8080/Incr?param1=5
