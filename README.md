@@ -3,6 +3,8 @@
 
 ## Pour le TD2
 
+### Générer la solution.
+
 Les questions 1 et 2 sont trouvables dans le projet **BasicWebServerUrlParser** (dossier BasicWebServer). Il suffit de lancer ce projet et d'aller sur les URLS (qui sont écrites dans MyMehods.cs) suivantes:
  - Question 1: http://localhost:8080/Method1?param1=test&param2=test2 et http://localhost:8080/Method2?param1=test&param2=test2
  - Question 2: http://localhost:8080/MethodExternal?param1=test&param2=test2
