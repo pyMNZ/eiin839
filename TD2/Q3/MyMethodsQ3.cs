@@ -3,7 +3,7 @@ using System.IO;
 
 namespace BasicWebServer
 {
-    internal class MyMethods
+    internal class MyMethodsQ3
     {
         // Interne
         // URL: http://localhost:8080/Method1?param1=test&param2=test2

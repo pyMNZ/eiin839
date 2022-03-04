@@ -153,6 +153,7 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine("Syntax error: the call must contain at least one web server url as argument");
             }
             listener.Start();
+            Console.WriteLine("------------------ Author --> Pierre-Yves MUNOZ ------------------");
 
             // get args 
             foreach (string s in args)
@@ -212,7 +213,9 @@ namespace BasicServerHTTPlistener
                 HttpListenerResponse response = context.Response;
 
                 // Construct a response.
-                string responseString = mymethodsHandler.GetMethodResult(method, param1, param2);
+                string responseString;
+                responseString = mymethodsHandler.GetMethodResult(method, param1, param2);
+                
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;

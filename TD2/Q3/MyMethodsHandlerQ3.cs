@@ -3,11 +3,11 @@ using System;
 using System.Reflection;
 
 
-public class MyMethodsHandler
+public class MyMethodsHandlerQ3
 {
     private readonly Type type;
 
-    public MyMethodsHandler() { type = typeof(MyMethods); }
+    public MyMethodsHandlerQ3() { type = typeof(MyMethodsQ3); }
 
     // Reflection
     public string GetMethodResult(string method, string param1, string param2)
