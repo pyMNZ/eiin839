@@ -8,4 +8,4 @@ Les questions 1 et 2 sont trouvables dans le projet **BasicWebServerUrlParser** 
  - Question 2: http://localhost:8080/MethodExternal?param1=test&param2=test2
 
 Pour la question 3, définir plusieurs projets de démarages: Q3 et ClientQ3. ClientQ3 est **dépendant** de Q3.
-Éxécuter et l'URL est: http://localhost:8080/Incr?param1=5
+Éxécuter, le ClientQ3 appel Q3 avec l'URL: http://localhost:8080/Incr?param1=5
