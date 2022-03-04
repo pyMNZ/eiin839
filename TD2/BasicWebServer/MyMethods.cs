@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace BasicWebServer
@@ -38,9 +39,7 @@ namespace BasicWebServer
             //
             ProcessStartInfo start = new ProcessStartInfo();
 
-            // Le external path est hard codé
-
-            start.FileName = @"D:\Polytech\SI4\S8\soc\git\eiin839\TD2\ExecTest\bin\Debug\ExecTest.exe"; // Specify exe name.
+            start.FileName = @"..\..\..\ExecTest\bin\Debug\ExecTest.exe"; // Specify exe name.
             start.Arguments = $"{param1} {param2}"; // Specify arguments.
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;

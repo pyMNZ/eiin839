@@ -4,7 +4,7 @@ using System.Net;
 using System.Text;
 using System.Web;
 
-namespace BasicServerHTTPlistener
+namespace Q3
 {
     internal class Program
     {
@@ -90,9 +90,7 @@ namespace BasicServerHTTPlistener
 
                 //parse params in url
                 string param1 = HttpUtility.ParseQueryString(request.Url.Query).Get("param1");
-                string param2 = HttpUtility.ParseQueryString(request.Url.Query).Get("param2");
                 Console.WriteLine("param1 = " + param1);
-                Console.WriteLine("param2 = " + param2);
 
                 //
                 Console.WriteLine(documentContents);
@@ -102,7 +100,7 @@ namespace BasicServerHTTPlistener
 
                 // Construct a response.
                 string responseString;
-                responseString = mymethodsHandler.GetMethodResult(method, param1, param2);
+                responseString = mymethodsHandler.GetMethodResult(method, param1);
 
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
